@@ -127,38 +127,37 @@
 
             <div class="mt-4">
                 <x-label for="categoria" value="{{ __('Categoria') }}"></x-label>
-                <x-input wire:model="categoria" id="" class="block mt-1 w-full" type="text"></x-input>
+                <x-input wire:model="categoria" id="" class="block mt-1 w-full" type="text"></x-jet-input>
                 @error('categoria') <span class="error">{{ $message }}</span> @enderror
             </div>      
 
             <div class="mt-4">
-                <x-label for="marca" value="{{ __('Marca') }}"></x-label>
-                <x-input wire:model="marca" id="" class="block mt-1 w-full" type="text" ></x-input>
+                <x-label for="marca" value="{{ __('Marca') }}"></x-jet-label>
+                <x-input wire:model="marca" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
                 @error('marca') <span class="error">{{ $message }}</span> @enderror
             </div>  
 
             <div class="mt-4">
-                <x-label for="modelo" value="{{ __('Modelo') }}" ></x-label>
-                <x-input wire:model="modelo" id="" class="block mt-1 w-full" type="text" ></x-input>
+                <x-label for="modelo" value="{{ __('Modelo') }}" ></x-jet-label>
+                <x-input wire:model="modelo" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
                 @error('modelo') <span class="error">{{ $message }}</span> @enderror
             </div>  
 
             <div class="mt-4">
-                <x-label for="dimensoes" value="{{ __('Dimensoes') }}" ></x-label>
-                <x-input wire:model="dimensoes" id="" class="block mt-1 w-full" type="text" ></x-input>
+                <x-label for="dimensoes" value="{{ __('Dimensoes') }}" ></x-jet-label>
+                <x-input wire:model="dimensoes" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
                 @error('dimensoes') <span class="error">{{ $message }}</span> @enderror
             </div>  
 
             <div class="mt-4">
-                <x-label for="preco" value="{{ __('Preco') }}" ></x-label>
-                <x-input wire:model="preco" id="" class="block mt-1 w-full" type="text" ></x-input>
+                <x-label for="preco" value="{{ __('Preco') }}" ></x-jet-label>
+                <x-input wire:model="preco" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
                 @error('preco') <span class="error">{{ $message }}</span> @enderror
             </div>       
 
             <div class="mt-4">
-                <x-label for="uso" value="{{ __('Uso') }}"></x-label>
-                <x-input wire:model="uso" id="" class="block mt-1 w-full" type="text" ></x-
-                input>
+                <x-label for="uso" value="{{ __('Uso') }}"></x-jet-label>
+                <x-input wire:model="uso" id="" class="block mt-1 w-full" type="text" ></x-jet-input>
                 @error('uso') <span class="error">{{ $message }}</span> @enderror
             </div>  
         </x-slot>

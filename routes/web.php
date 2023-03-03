@@ -20,17 +20,21 @@ Route::get('/', function () {
 });
 
 
-route::group(['middleware'=>[
+Route::group(['middleware'=>[
     'auth:sanctum',
     'verified',
+    'accessrole',
     
-
 ]],function(){
 
+    Route::get('/produtos', function () {
+        return view('produtos');
+    })->name('produtos');
 
+    Route::get('/contacto', function () {
+        return view('contacto');
+    })->name('contacto');
 
-    
- 
     Route::get('/comprar', function () {
         return view('comprar');
     })->name('comprar');
@@ -41,17 +45,7 @@ route::group(['middleware'=>[
     })->name('reservas');
     
     
-   
-
-
-
-
-    });
-
-    Route::get('/produtos', Produtos::class);
-
-    Route::get('/contacto', function () {
-        return view('contacto');
-    })->name('contacto');
+});
+  
 
 
